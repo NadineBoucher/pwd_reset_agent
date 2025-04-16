@@ -1,7 +1,10 @@
-This is a basic Google Cloud Conversational Agents for password reset.
+This is a basic Google Cloud Conversational Agents (Playbook using Gemini) for password reset.
 
-It is build using Playbook and reference one tool openapi.
-
+Description:
+- The agent greet the user and collect its full name
+- Assuming the user say something like : "I need to reset my pwd, i got locked out of my account"
+- The agent will also collect the last 4 digits of the user SSN and its billing zip code
+- Call the Tool --> OpenAPI --> CF/Cloud Run to reset the pwd (dummy).
 
 1. How to deploy a cloud function .zip using the command line?
 https://cloud.google.com/functions/docs/deploy#basics
